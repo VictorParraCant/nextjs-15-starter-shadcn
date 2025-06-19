@@ -1,0 +1,206 @@
+{
+    "meta": {
+        "title": "FIMA - Gestor Financiero Personal",
+        "description": "Gestiona tus finanzas personales y colaborativas de forma inteligente"
+    },
+    "nav": {
+        "home": "Inicio",
+        "features": "Características",
+        "pricing": "Precios",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "login": "Iniciar Sesión",
+        "register": "Registrarse",
+        "dashboard": "Dashboard",
+        "wallets": "Carteras",
+        "transactions": "Movimientos",
+        "groups": "Grupos",
+        "account": "Cuenta",
+        "settings": "Configuración"
+    },
+    "auth": {
+        "login": {
+            "title": "Iniciar Sesión",
+            "subtitle": "Accede a tu cuenta de FIMA",
+            "email": "Correo electrónico",
+            "emailPlaceholder": "tu@email.com",
+            "password": "Contraseña",
+            "passwordPlaceholder": "••••••••",
+            "rememberMe": "Recordarme",
+            "forgotPassword": "¿Olvidaste tu contraseña?",
+            "submit": "Iniciar Sesión",
+            "noAccount": "¿No tienes cuenta?",
+            "createAccount": "Crear cuenta",
+            "loginWith": "Iniciar sesión con",
+            "google": "Google",
+            "errors": {
+                "invalid": "Credenciales inválidas",
+                "network": "Error de conexión",
+                "generic": "Error al iniciar sesión"
+            }
+        },
+        "register": {
+            "title": "Crear Cuenta",
+            "subtitle": "Únete a FIMA y comienza a gestionar tus finanzas",
+            "firstName": "Nombre",
+            "lastName": "Apellidos",
+            "email": "Correo electrónico",
+            "password": "Contraseña",
+            "confirmPassword": "Confirmar contraseña",
+            "terms": "Acepto los términos y condiciones",
+            "privacy": "Acepto la política de privacidad",
+            "submit": "Crear Cuenta",
+            "hasAccount": "¿Ya tienes cuenta?",
+            "signIn": "Iniciar sesión",
+            "errors": {
+                "passwordMismatch": "Las contraseñas no coinciden",
+                "weakPassword": "La contraseña es muy débil",
+                "emailExists": "El email ya está registrado",
+                "generic": "Error al crear la cuenta"
+            }
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Gestiona tus finanzas como un profesional",
+            "subtitle": "FIMA te ayuda a controlar tus gastos, inversiones y finanzas compartidas en un solo lugar",
+            "cta": "Comenzar gratis",
+            "watchDemo": "Ver demo"
+        },
+        "features": {
+            "title": "Todo lo que necesitas para tus finanzas",
+            "personal": {
+                "title": "Finanzas personales",
+                "description": "Conecta tus cuentas bancarias y tarjetas para un seguimiento automático"
+            },
+            "collaborative": {
+                "title": "Gastos compartidos",
+                "description": "Gestiona gastos de grupo, viajes y compañeros de piso fácilmente"
+            },
+            "analytics": {
+                "title": "Análisis inteligente",
+                "description": "Obtén insights sobre tus hábitos de gasto y patrones financieros"
+            },
+            "security": {
+                "title": "Seguridad bancaria",
+                "description": "Tus datos están protegidos con cifrado de nivel bancario"
+            }
+        },
+        "testimonials": {
+            "title": "Lo que dicen nuestros usuarios",
+            "user1": {
+                "name": "María García",
+                "role": "Freelancer",
+                "text": "FIMA ha revolucionado cómo gestiono mis finanzas. Ahora tengo control total de mis ingresos y gastos."
+            },
+            "user2": {
+                "name": "Carlos Rodríguez",
+                "role": "Estudiante",
+                "text": "Perfecto para compartir gastos con compañeros de piso. Ya no hay confusiones sobre quién debe qué."
+            }
+        },
+        "pricing": {
+            "title": "Planes para cada necesidad",
+            "free": {
+                "name": "Gratis",
+                "price": "0€",
+                "period": "/mes",
+                "features": [
+                    "Hasta 3 carteras",
+                    "100 transacciones/mes",
+                    "Informes básicos",
+                    "1 grupo compartido"
+                ]
+            },
+            "pro": {
+                "name": "Pro",
+                "price": "9€",
+                "period": "/mes",
+                "features": [
+                    "Carteras ilimitadas",
+                    "Transacciones ilimitadas",
+                    "Informes avanzados",
+                    "Grupos ilimitados",
+                    "Conectores bancarios",
+                    "Soporte prioritario"
+                ]
+            }
+        }
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "welcome": "Bienvenido de nuevo",
+        "overview": {
+            "title": "Resumen",
+            "totalBalance": "Saldo Total",
+            "monthlyIncome": "Ingresos del mes",
+            "monthlyExpenses": "Gastos del mes",
+            "monthlyInvestments": "Inversiones del mes"
+        },
+        "recentTransactions": {
+            "title": "Movimientos recientes",
+            "viewAll": "Ver todos",
+            "noTransactions": "No hay movimientos recientes"
+        },
+        "monthlyChart": {
+            "title": "Evolución mensual",
+            "income": "Ingresos",
+            "expenses": "Gastos",
+            "balance": "Balance"
+        },
+        "categories": {
+            "title": "Gastos por categoría",
+            "thisMonth": "Este mes"
+        }
+    },
+    "common": {
+        "loading": "Cargando...",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "add": "Añadir",
+        "search": "Buscar",
+        "filter": "Filtrar",
+        "export": "Exportar",
+        "import": "Importar",
+        "settings": "Configuración",
+        "profile": "Perfil",
+        "logout": "Cerrar sesión",
+        "confirm": "Confirmar",
+        "back": "Volver",
+        "next": "Siguiente",
+        "previous": "Anterior",
+        "close": "Cerrar",
+        "open": "Abrir",
+        "yes": "Sí",
+        "no": "No",
+        "required": "Campo requerido",
+        "optional": "Opcional",
+        "currency": "€",
+        "date": "Fecha",
+        "amount": "Cantidad",
+        "description": "Descripción",
+        "category": "Categoría",
+        "type": "Tipo"
+    },
+    "footer": {
+        "company": "Empresa",
+        "about": "Acerca de",
+        "careers": "Trabajos",
+        "blog": "Blog",
+        "product": "Producto",
+        "features": "Características",
+        "pricing": "Precios",
+        "security": "Seguridad",
+        "support": "Soporte",
+        "help": "Ayuda",
+        "contact": "Contacto",
+        "status": "Estado",
+        "legal": "Legal",
+        "privacy": "Privacidad",
+        "terms": "Términos",
+        "cookies": "Cookies",
+        "rights": "© 2024 FIMA. Todos los derechos reservados."
+    }
+}

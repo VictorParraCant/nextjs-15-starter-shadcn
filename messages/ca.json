@@ -1,0 +1,206 @@
+{
+    "meta": {
+        "title": "FIMA - Gestor Financer Personal",
+        "description": "Gestiona les teves finances personals i col·laboratives de forma intel·ligent"
+    },
+    "nav": {
+        "home": "Inici",
+        "features": "Característiques",
+        "pricing": "Preus",
+        "about": "Sobre nosaltres",
+        "contact": "Contacte",
+        "login": "Iniciar Sessió",
+        "register": "Registrar-se",
+        "dashboard": "Tauler",
+        "wallets": "Carteres",
+        "transactions": "Moviments",
+        "groups": "Grups",
+        "account": "Compte",
+        "settings": "Configuració"
+    },
+    "auth": {
+        "login": {
+            "title": "Iniciar Sessió",
+            "subtitle": "Accedeix al teu compte de FIMA",
+            "email": "Correu electrònic",
+            "emailPlaceholder": "el.teu@email.com",
+            "password": "Contrasenya",
+            "passwordPlaceholder": "••••••••",
+            "rememberMe": "Recorda'm",
+            "forgotPassword": "Has oblidat la contrasenya?",
+            "submit": "Iniciar Sessió",
+            "noAccount": "No tens compte?",
+            "createAccount": "Crear compte",
+            "loginWith": "Iniciar sessió amb",
+            "google": "Google",
+            "errors": {
+                "invalid": "Credencials no vàlides",
+                "network": "Error de connexió",
+                "generic": "Error d'inici de sessió"
+            }
+        },
+        "register": {
+            "title": "Crear Compte",
+            "subtitle": "Uneix-te a FIMA i comença a gestionar les teves finances",
+            "firstName": "Nom",
+            "lastName": "Cognoms",
+            "email": "Correu electrònic",
+            "password": "Contrasenya",
+            "confirmPassword": "Confirmar contrasenya",
+            "terms": "Accepto els termes i condicions",
+            "privacy": "Accepto la política de privacitat",
+            "submit": "Crear Compte",
+            "hasAccount": "Ja tens compte?",
+            "signIn": "Iniciar sessió",
+            "errors": {
+                "passwordMismatch": "Les contrasenyes no coincideixen",
+                "weakPassword": "La contrasenya és massa feble",
+                "emailExists": "L'email ja està registrat",
+                "generic": "Error al crear el compte"
+            }
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Gestiona les teves finances com un professional",
+            "subtitle": "FIMA t'ajuda a controlar les teves despeses, inversions i finances compartides en un sol lloc",
+            "cta": "Començar gratis",
+            "watchDemo": "Veure demo"
+        },
+        "features": {
+            "title": "Tot el que necessites per a les teves finances",
+            "personal": {
+                "title": "Finances personals",
+                "description": "Connecta els teus comptes bancaris i targetes per a un seguiment automàtic"
+            },
+            "collaborative": {
+                "title": "Despeses compartides",
+                "description": "Gestiona despeses de grup, viatges i companys de pis fàcilment"
+            },
+            "analytics": {
+                "title": "Anàlisis intel·ligent",
+                "description": "Obtén insights sobre els teus hàbits de despesa i patrons financers"
+            },
+            "security": {
+                "title": "Seguretat bancària",
+                "description": "Les teves dades estan protegides amb xifrat de nivell bancari"
+            }
+        },
+        "testimonials": {
+            "title": "El que diuen els nostres usuaris",
+            "user1": {
+                "name": "Maria García",
+                "role": "Freelancer",
+                "text": "FIMA ha revolucionat com gestiono les meves finances. Ara tinc control total dels meus ingressos i despeses."
+            },
+            "user2": {
+                "name": "Carles Rodríguez",
+                "role": "Estudiant",
+                "text": "Perfecte per compartir despeses amb companys de pis. Ja no hi ha confusions sobre qui deu què."
+            }
+        },
+        "pricing": {
+            "title": "Plans per a cada necessitat",
+            "free": {
+                "name": "Gratis",
+                "price": "0€",
+                "period": "/mes",
+                "features": [
+                    "Fins a 3 carteres",
+                    "100 transaccions/mes",
+                    "Informes bàsics",
+                    "1 grup compartit"
+                ]
+            },
+            "pro": {
+                "name": "Pro",
+                "price": "9€",
+                "period": "/mes",
+                "features": [
+                    "Carteres il·limitades",
+                    "Transaccions il·limitades",
+                    "Informes avançats",
+                    "Grups il·limitats",
+                    "Connectors bancaris",
+                    "Suport prioritari"
+                ]
+            }
+        }
+    },
+    "dashboard": {
+        "title": "Tauler",
+        "welcome": "Benvingut de nou",
+        "overview": {
+            "title": "Resum",
+            "totalBalance": "Saldo Total",
+            "monthlyIncome": "Ingressos del mes",
+            "monthlyExpenses": "Despeses del mes",
+            "monthlyInvestments": "Inversions del mes"
+        },
+        "recentTransactions": {
+            "title": "Moviments recents",
+            "viewAll": "Veure tots",
+            "noTransactions": "No hi ha moviments recents"
+        },
+        "monthlyChart": {
+            "title": "Evolució mensual",
+            "income": "Ingressos",
+            "expenses": "Despeses",
+            "balance": "Balanç"
+        },
+        "categories": {
+            "title": "Despeses per categoria",
+            "thisMonth": "Aquest mes"
+        }
+    },
+    "common": {
+        "loading": "Carregant...",
+        "save": "Guardar",
+        "cancel": "Cancel·lar",
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "add": "Afegir",
+        "search": "Cercar",
+        "filter": "Filtrar",
+        "export": "Exportar",
+        "import": "Importar",
+        "settings": "Configuració",
+        "profile": "Perfil",
+        "logout": "Tancar sessió",
+        "confirm": "Confirmar",
+        "back": "Tornar",
+        "next": "Següent",
+        "previous": "Anterior",
+        "close": "Tancar",
+        "open": "Obrir",
+        "yes": "Sí",
+        "no": "No",
+        "required": "Camp obligatori",
+        "optional": "Opcional",
+        "currency": "€",
+        "date": "Data",
+        "amount": "Quantitat",
+        "description": "Descripció",
+        "category": "Categoria",
+        "type": "Tipus"
+    },
+    "footer": {
+        "company": "Empresa",
+        "about": "Sobre nosaltres",
+        "careers": "Treballs",
+        "blog": "Blog",
+        "product": "Producte",
+        "features": "Característiques",
+        "pricing": "Preus",
+        "security": "Seguretat",
+        "support": "Suport",
+        "help": "Ajuda",
+        "contact": "Contacte",
+        "status": "Estat",
+        "legal": "Legal",
+        "privacy": "Privacitat",
+        "terms": "Termes",
+        "cookies": "Cookies",
+        "rights": "© 2024 FIMA. Tots els drets reservats."
+    }
+}

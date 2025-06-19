@@ -1,157 +1,316 @@
-# Next.js 15 Starter (shadcn) [[LIVE DEMO](https://nextjs-15-starter-shadcn.vercel.app/)]
+# FIMA - Gestor Financiero Personal y Colaborativo
 
-![MIT License](https://img.shields.io/badge/license-MIT-blue) [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org) ![ESLint](https://img.shields.io/badge/code%20style-eslint-brightgreen) ![GitHub stars](https://img.shields.io/github/stars/siddharthamaity/nextjs-15-starter-shadcn?style=social) ![GitHub forks](https://img.shields.io/github/forks/siddharthamaity/nextjs-15-starter-shadcn?style=social) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/siddharthamaity)
+![MIT License](https://img.shields.io/badge/license-MIT-blue) [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org) ![Next.js 15](https://img.shields.io/badge/Next.js-15-black) ![React 19](https://img.shields.io/badge/React-19-blue)
 
-*This is the Tailwind version for Next.js 15 Starter, you may be interested in other templates too -*
-- [**Next.js 15 Starter Core**](https://github.com/SiddharthaMaity/nextjs-15-starter-core)
-- [**Next.js 15 Starter with Tailwind CSS**](https://github.com/SiddharthaMaity/nextjs-15-starter-tailwind)
+**FIMA** es un gestor financiero moderno que te permite controlar tus gastos personales, inversiones y gastos compartidos en un solo lugar.
 
-Welcome to the **Next.js 15 Starter** repository! This starter template is built with Next.js 15, React 19, TypeScript 5, Tailwind CSS 3, Shadcn UI and comes packed with several powerful tools and configurations to accelerate your project setup and streamline development workflows using VS Code.
+## 🚀 Características
 
-![Next.js 15 Starter Shadcn](public/images/screenshot1.png)
+- 💰 **Gestión Personal**: Controla tus ingresos, gastos e inversiones
+- 👥 **Gastos Compartidos**: Gestiona gastos de grupo, viajes y compañeros de piso
+- 📊 **Analytics Inteligente**: Visualiza tus patrones financieros con gráficas
+- 📄 **Importación Automática**: Procesa archivos CSV y PDF de bancos
+- 🔐 **Seguridad Bancaria**: Cifrado de nivel bancario y cumplimiento GDPR
+- 🌐 **Multi-idioma**: Soporte para español, inglés y catalán
+- 📱 **Responsive**: Diseño optimizado para móvil y desktop
 
-![Next.js 15 Starter Shadcn](public/images/screenshot2.png)
+## 🛠️ Stack Tecnológico
 
-## 🚀 What's Included
+### Frontend
+- **Next.js 15** - Framework React con App Router
+- **React 19** - Biblioteca de UI
+- **TypeScript 5** - Tipado estático
+- **Tailwind CSS 4** - Estilos utilitarios
+- **shadcn/ui** - Componentes de UI
+- **Redux Toolkit** - Gestión de estado global
+- **React Hook Form** - Gestión de formularios
+- **Recharts** - Gráficas y visualizaciones
 
-- **Next.js 15**
-- **React 19**
-- **TypeScript 5**
-- **ESLint 9**
-- **Prettier 3**
-- **Tailwind CSS 4**
-- **Shadcn UI**
-- **App Directory**
-- **System, Light & Dark Mode**
-- **Next.js Bundle Analyzer**
-- **Dockerfile** with Node.js 22.16.0 (Alpine)
-- **Dockerfile.bun** with Bun 1.2.15 (Alpine)
+### Backend
+- **Firebase Auth** - Autenticación de usuarios
+- **Firestore** - Base de datos NoSQL
+- **Firebase Storage** - Almacenamiento de archivos
+- **Firebase Functions** - Funciones serverless
 
-### 🛠️ ESLint Plugins
+### Herramientas
+- **ESLint 9** - Linting de código
+- **Prettier 3** - Formateo de código
+- **next-intl** - Internacionalización
+- **Zod** - Validación de esquemas
 
-- [**@eslint/js**](https://www.npmjs.com/package/@eslint/js)
-- [**typescript-eslint**](https://github.com/typescript-eslint/typescript-eslint)
-- [**eslint-plugin-react**](https://github.com/jsx-eslint/eslint-plugin-react)
-- [**@next/eslint-plugin-next**](https://github.com/vercel/next.js)
-- [**eslint-config-prettier**](eslint-config-prettier)
-- [**eslint-plugin-tailwindcss**](https://github.com/francoismassart/eslint-plugin-tailwindcss)
-- [**eslint-plugin-import**](https://github.com/import-js/eslint-plugin-import)
-- [**eslint-plugin-promise**](https://github.com/eslint-community/eslint-plugin-promise)
+## 🏁 Instalación
 
-### ✨ Prettier Plugins
+### Prerrequisitos
 
-- [**@trivago/prettier-plugin-sort-imports**](https://github.com/trivago/prettier-plugin-sort-imports)
-- [**prettier-plugin-tailwindcss**](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
+- Node.js 20.18.0 o superior
+- npm, yarn, pnpm o bun
+- Proyecto de Firebase configurado
 
-### 💻 VS Code Extensions (Recommended)
+### Configuración
 
-To enhance development experience, install the following VS Code extensions:
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/fima.git
+   cd fima
+   ```
 
-- [**Auto Close Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-- [**Better Comments**](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-- [**DotENV**](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-- [**EditorConfig for VS Code**](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-- [**ESLint**](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [**formate: CSS/LESS/SCSS formatter**](https://marketplace.visualstudio.com/items?itemName=MikeBovenlander.formate)
-- [**Git History**](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
-- [**Import Cost**](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-- [**JavaScript Booster**](https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster)
-- [**npm Intellisense**](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
-- [**Prettier - Code formatter**](https://marketplace.visualstudio.com/items?itemName=esbenp)
-- [**Todo Tree**](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-- [**Turbo Console Log**](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
-- [**Package Json Upgrade**](https://marketplace.visualstudio.com/items?itemName=codeandstuff.package-json-upgrade)
-- [**Visual Studio Code Commitizen Support**](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen)
-- [**Markdown All in One**](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+2. **Instalar dependencias**:
+   ```bash
+   npm install
+   # o
+   yarn install
+   # o
+   pnpm install
+   # o
+   bun install
+   ```
 
+3. **Configurar variables de entorno**:
+   ```bash
+   cp .env.example .env.local
+   ```
+   
+   Edita `.env.local` con tus credenciales de Firebase:
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=tu_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=tu_auth_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=tu_project_id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=tu_storage_bucket
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
+   NEXT_PUBLIC_FIREBASE_APP_ID=tu_app_id
+   ```
 
-## 🏁 Getting Started
+4. **Ejecutar en desarrollo**:
+   ```bash
+   npm run dev
+   # o
+   yarn dev
+   # o
+   pnpm dev
+   # o
+   bun dev
+   ```
 
-### Prerequisites
+5. **Abrir en el navegador**: [http://localhost:3000](http://localhost:3000)
 
-- **Bun**: Version 1.2.15 or higher OR
-- **Node.js**: Version 20.18.0 or higher
-- **Docker**: For containerized deployment (optional but recommended)
+## 🔥 Configuración de Firebase
 
-### Installation
+### 1. Crear proyecto en Firebase Console
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/siddharthamaity/nextjs-15-starter-shadcn.git
-    cd nextjs-15-starter-shadcn
-    ```
-    To get the code without example change branch to without-example
-    ```bash
-    git checkout without-example
-    ```
+1. Ve a [Firebase Console](https://console.firebase.google.com/)
+2. Crea un nuevo proyecto
+3. Habilita Authentication, Firestore y Storage
 
-2. **Install Dependencies**:
-    ```bash
-    npm install
-    # or with Yarn
-    yarn install
-    # or with pnpm
-    pnpm install
-    # or with Bun
-    bun install
-    ```
+### 2. Configurar Authentication
 
-3. **Run Development Server**:
-    ```bash
-    npm run dev
-    # or with Yarn
-    yarn dev
-    # or with pnpm
-    pnpm dev
-    # or with Bun
-    bun dev
-    ```
+- Habilita Email/Password en Authentication > Sign-in method
+- Opcionalmente habilita Google OAuth
 
-4. **Build for Production**:
-    ```bash
-    npm run build
-    # or with Yarn
-    yarn build
-    # or with pnpm
-    pnpm build
-    # or with Bun
-    bun run build
-    ```
+### 3. Configurar Firestore
 
-### 🐳 Docker Setup
+Crea las siguientes colecciones según el modelo de datos:
 
-To use Docker, make sure Docker is installed on your machine. Then, build and run the Docker container:
-
-```bash
-docker build . -t nextjs-starter-shadcn
-# or if using Bun
-docker build . -t nextjs-starter-shadcn -f Dockerfile.bun
-
-docker run -p 3000:3000 nextjs-starter-shadcn
+```
+firestore/
+├── users/
+│   └── {userId}/
+│       ├── wallets/
+│       └── files/
+├── categories/
+└── sharedGroups/
+    └── {groupId}/
+        └── sharedTransactions/
 ```
 
-### ☁ Try it in the Cloud
+### 4. Reglas de Firestore (básicas)
 
-[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-blue?logo=visualstudiocode)](https://vscode.dev/github/SiddharthaMaity/nextjs-15-starter-shadcn)
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users can only access their own data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      match /{document=**} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+    
+    // Global categories are readable by all authenticated users
+    match /categories/{categoryId} {
+      allow read: if request.auth != null;
+    }
+    
+    // Shared groups access based on membership
+    match /sharedGroups/{groupId} {
+      allow read, write: if request.auth != null && 
+        request.auth.uid in resource.data.members[].userId;
+    }
+  }
+}
+```
 
-[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github)](https://codespaces.new/SiddharthaMaity/nextjs-15-starter-shadcn)
+## 📖 Estructura del Proyecto
 
-[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/SiddharthaMaity/nextjs-15-starter-shadcn)
+```
+src/
+├── app/                    # App Router de Next.js
+│   ├── [locale]/          # Rutas con soporte multi-idioma
+│   │   ├── (auth)/        # Páginas de autenticación
+│   │   ├── (dashboard)/   # Páginas autenticadas
+│   │   └── page.tsx       # Landing page
+│   ├── globals.css        # Estilos globales
+│   └── layout.tsx         # Layout raíz
+├── components/            # Componentes reutilizables
+│   ├── ui/               # Componentes de shadcn/ui
+│   ├── auth/             # Componentes de autenticación
+│   ├── dashboard/        # Componentes del dashboard
+│   └── shared/           # Componentes compartidos
+├── lib/                  # Utilidades y configuraciones
+│   ├── firebase/         # Configuración de Firebase
+│   ├── redux/           # Store y slices de Redux
+│   ├── types/           # Tipos de TypeScript
+│   └── utils/           # Funciones utilitarias
+├── hooks/               # Custom hooks
+├── messages/           # Traducciones i18n
+└── styles/             # Estilos adicionales
+```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/SiddharthaMaity/nextjs-15-starter-shadcn)
+## 🎯 Modelo de Datos
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/SiddharthaMaity/nextjs-15-starter-shadcn)
+### Firestore Collections
 
-[![Open in Repl.it](https://replit.com/badge/github/SiddharthaMaity/nextjs-15-starter-shadcn)](https://replit.com/github/SiddharthaMaity/nextjs-15-starter-shadcn)
+#### users/{userId}
+```typescript
+{
+  email: string;
+  displayName: string;
+  createdAt: string;
+  defaultCurrency: string;
+  settings: {
+    theme: 'light' | 'dark' | 'system';
+    language: string;
+    notificationPreferences: {
+      email: boolean;
+      push: boolean;
+      budgetAlerts: boolean;
+    };
+  };
+}
+```
 
-[![Open in Glitch](https://img.shields.io/badge/Open%20in-Glitch-blue?logo=glitch)](https://glitch.com/edit/#!/import/github/SiddharthaMaity/nextjs-15-starter-shadcn)
+#### users/{userId}/wallets/{walletId}
+```typescript
+{
+  name: string;
+  type: 'bank' | 'cash' | 'broker' | 'other';
+  institution?: string;
+  initialBalance: number;
+  createdAt: string;
+}
+```
 
-[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/SiddharthaMaity/nextjs-15-starter-shadcn)
+#### users/{userId}/wallets/{walletId}/transactions/{transactionId}
+```typescript
+{
+  date: string;
+  amount: number;
+  type: 'expense' | 'income' | 'investment';
+  description: string;
+  categoryId: string;
+  sourceWalletId?: string;
+  destinationWalletId?: string;
+  createdFrom: 'manual' | 'csv' | 'pdf';
+  fileId?: string;
+  groupId?: string;
+  userId: string;
+  createdAt: string;
+}
+```
 
-### License
+## 🌐 Internacionalización
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+El proyecto soporta múltiples idiomas usando **next-intl**:
+
+- **Español (es)** - Idioma principal
+- **Inglés (en)** - Traducción completa
+- **Catalán (ca)** - Traducción completa
+
+### Añadir nuevos idiomas
+
+1. Añade el código del idioma a `i18n.ts`:
+   ```typescript
+   export const locales = ['en', 'es', 'ca', 'fr'] as const;
+   ```
+
+2. Crea el archivo de traducciones:
+   ```bash
+   cp messages/es.json messages/fr.json
+   ```
+
+3. Traduce el contenido del archivo
+
+## 🧪 Scripts Disponibles
+
+```bash
+# Desarrollo
+npm run dev          # Servidor de desarrollo con Turbopack
+npm run build        # Build de producción
+npm run start        # Servidor de producción
+npm run lint         # Ejecutar ESLint
+npm run lint:fix     # Corregir errores de ESLint automáticamente
+npm run format       # Formatear código con Prettier
+```
+
+## 📊 Análisis del Bundle
+
+Para analizar el tamaño del bundle:
+
+```bash
+BUNDLE_ANALYZER_ENABLED=true npm run build
+```
+
+## 🚢 Despliegue
+
+### Vercel (Recomendado)
+
+1. Push tu código a GitHub
+2. Conecta tu repositorio en [Vercel](https://vercel.com)
+3. Configura las variables de entorno
+4. Despliega automáticamente
+
+### Docker
+
+```bash
+# Build
+docker build -t fima .
+
+# Run
+docker run -p 3000:3000 fima
+```
+
+## 🤝 Contribuir
+
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/amazing-feature`)
+3. Commit tus cambios (`git commit -m 'Add amazing feature'`)
+4. Push a la rama (`git push origin feature/amazing-feature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 🆘 Soporte
+
+Si tienes preguntas o necesitas ayuda:
+
+- 📧 Email: soporte@fima.app
+- 💬 Discord: [Únete a nuestra comunidad](https://discord.gg/fima)
+- 📚 Documentación: [docs.fima.app](https://docs.fima.app)
+- 🐛 Issues: [GitHub Issues](https://github.com/tu-usuario/fima/issues)
 
 ---
 
-<p style="text-align: center;"> With ❤️ from 🇮🇳 </p>
+<p align="center">Hecho con ❤️ en España 🇪🇸</p>
