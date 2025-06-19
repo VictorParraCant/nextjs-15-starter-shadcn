@@ -4,7 +4,7 @@ import initializeBundleAnalyzer from '@next/bundle-analyzer';
 
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./src/app/[locale]/i18n.ts');
 
 // https://www.npmjs.com/package/@next/bundle-analyzer
 const withBundleAnalyzer = initializeBundleAnalyzer({
