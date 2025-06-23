@@ -6,12 +6,11 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./src/app/[locale]/i18n.ts');
 
-// https://www.npmjs.com/package/@next/bundle-analyzer
+const isUsingTurbopack = process.env.NEXT_USE_TURBOPACK === 'true';
 const withBundleAnalyzer = initializeBundleAnalyzer({
-    enabled: process.env.BUNDLE_ANALYZER_ENABLED === 'true'
+    enabled: !isUsingTurbopack && process.env.BUNDLE_ANALYZER_ENABLED === 'true'
 });
 
-// https://nextjs.org/docs/pages/api-reference/next-config-js
 const nextConfig: NextConfig = {
     output: 'standalone',
     outputFileTracingIncludes: {
@@ -19,23 +18,13 @@ const nextConfig: NextConfig = {
     },
     images: {
         remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'avatars.githubusercontent.com'
-            },
-            {
-                protocol: 'https',
-                hostname: 'images.unsplash.com'
-            },
-            {
-                protocol: 'https',
-                hostname: 'firebasestorage.googleapis.com'
-            }
+            { protocol: 'https', hostname: 'avatars.githubusercontent.com' },
+            { protocol: 'https', hostname: 'images.unsplash.com' },
+            { protocol: 'https', hostname: 'firebasestorage.googleapis.com' }
         ]
     },
-    experimental: {
-        serverComponentsExternalPackages: ['pdfjs-dist']
-    }
+    serverExternalPackages: ['pdfjs-dist'],
+    turbopack: {}
 };
 
 export default withBundleAnalyzer(withNextIntl(nextConfig));
